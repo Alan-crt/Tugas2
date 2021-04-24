@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/masukkan_panjang"/>
+
     <EditText
+        android:id="@+id/etPanjang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etPanjang"
-        android:inputType="number"/>
+        android:hint="Panjang"
+        android:inputType="number" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etLebar"
+        android:hint="Lebar"
         android:inputType="number"/>
     <TextView
         android:layout_width="match_parent"
@@ -32,16 +37,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etTinggi"
+        android:hint="Tinggi"
         android:inputType="number"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnHitung"
-        android:text="Hitung"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvVolume"
-        android:text="Volume Balok"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume Balok" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+
+</LinearLayout>
